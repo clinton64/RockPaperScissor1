@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RockPaperSciissor</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnRock"> Rock</string>
+    <string name="btnPaper"> Paper</string>
+    <string name="btnScissor">Scissor</string>
+    <string name="btnSingle">Single Player</string>
+    <string name="btnDouble">Double Player</string>
+</resources>

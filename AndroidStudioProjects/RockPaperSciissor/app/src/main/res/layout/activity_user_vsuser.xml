@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userVSuser">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="112dp"
+        android:layout_height="95dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:drawableBottom="@drawable/rock"
+        android:text="@string/btnRock" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="108dp"
+        android:layout_height="95dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/button1"
+        android:drawableBottom="@drawable/paper"
+        android:text="@string/btnPaper" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/button2"
+        android:drawableRight="@drawable/scissors"
+        android:text="@string/btnScissor" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="148dp"
+        android:layout_height="98dp"
+        android:layout_alignParentLeft="true"
+        app:srcCompat="@drawable/paper" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:text="Player1 Choise"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="148dp"
+        android:layout_height="98dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/rock" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
+        android:layout_alignParentRight="true"
+        android:text="Player2 Choise"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/newGame"
+        android:layout_width="110dp"
+        android:layout_height="66dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="126dp"
+        android:layout_marginBottom="-7dp"
+        android:text="New Game" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/newGame"
+        android:text=" Human 0\n Computer 0"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+
+</RelativeLayout>
